@@ -26,5 +26,7 @@ CHIP Mux16Way16 {
     OUT out[16];
 
     PARTS:
-    // Implementation missing
+    Mux8Way16(a=a, b=b, c=c, d=d, e=e, f=f, g=g, h=h, sel=sel[0..2], out=abcdefghMux8Way16);
+    Mux8Way16(a=i, b=j, c=k, d=l, e=m, f=n, g=o, h=p, sel=sel[0..2], out=ijklmnopMux8Way16);
+    Mux16(a=abcdefghMux8Way16, b=ijklmnopMux8Way16, sel=sel[3], out=out);
 }
