@@ -1,0 +1,20 @@
+/**
+ * Larc ALU:
+ *   switch( {nor,sub} ) {
+ *     case {0,0}: out = a + b            (z set if out == 0)
+ *     case {0,1}: out = a - b            (z set if out == 0)
+ *     case {1,0}: out = a NOR b          (z set if out == 0)
+ *     case {1,1}: out = (a < b ? 1 : 0 ) (z is undefined)
+ */
+CHIP ALU {
+
+    IN a[16],b[16],      // the two 16-bit inputs to be operated on
+       sub,              // 1 if subtraction is the requested operation
+       nor;              // 1 if NOR is the requested operation
+                         // note that sub == nor == 1 if SLT is requested
+    OUT out[16],         // 16-bit output of the requested operation
+        z;               // 1 iff out == 0 (zero flag)
+
+    PARTS:
+    // Implementation missing
+}

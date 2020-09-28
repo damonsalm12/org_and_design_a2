@@ -1,0 +1,14 @@
+/**
+ * 16-bit integer adder:  out = a + b where a and b are 16-bit 
+ * 2's complement representations of integers.  Overflow is 
+ * neither detected nor handled.
+ */
+CHIP Add16 {
+
+    IN  a[16], b[16];
+    OUT out[16];
+
+    PARTS:
+    // Implementation missing
+}
+

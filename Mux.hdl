@@ -1,0 +1,11 @@
+/** 
+ * 2-to-1 Multiplexer: If sel==1 then out=b else out=a
+ */
+
+CHIP Mux {
+    IN a, b, sel;
+    OUT out;
+
+    PARTS:
+    // Implementation missing
+}

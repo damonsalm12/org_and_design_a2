@@ -1,0 +1,11 @@
+/**
+ * 4-bit-wide 2-to-1 multiplexer: If sel==1 then out=b else out=a
+ */
+
+CHIP Mux4 {
+    IN a[4], b[4], sel;
+    OUT out[4];
+
+    PARTS:
+    // Implementation missing
+}

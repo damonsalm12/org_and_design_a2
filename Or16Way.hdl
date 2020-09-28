@@ -1,0 +1,11 @@
+/**
+ * 16-ary Or gate: out = a Or b ... Or p
+ */
+
+CHIP Or16Way {
+    IN a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p;
+    OUT out;
+
+    PARTS:
+    // Implementation missing
+}

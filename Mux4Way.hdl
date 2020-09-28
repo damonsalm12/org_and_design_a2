@@ -1,0 +1,16 @@
+/**
+ * 4-way or 4-to-1 multiplexer:  
+ * out = a if sel=00
+ *       b if sel=01
+ *       c if sel=10
+ *       d if sel=11
+ */
+
+CHIP Mux4Way {
+     
+    IN a, b, c, d, sel[2];
+    OUT out;
+
+    PARTS:
+    // Implementation missing
+}
