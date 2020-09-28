@@ -7,5 +7,19 @@ CHIP Or16Way {
     OUT out;
 
     PARTS:
-    // Implementation missing
+    Or(a=a, b=b, out=aOrb);
+    Or(a=aOrb, b=c, out=abOrc);
+    Or(a=abOrc, b=d, out=abcOrd);
+    Or(a=abcOrd, b=e, out = abcdOre);
+    Or(a=abcdOre, b=f, out = abcdeOrf);
+    Or(a=abcdeOrf, b=g, out = abcdefOrg);
+    Or(a=abcdefOrg, b=h, out = abcdefgOrh);
+    Or(a=abcdefgOrh, b=i, out = abcdefghOri);
+    Or(a=abcdefghOri, b=j, out = abcdefghiOrj);
+    Or(a=abcdefghiOrj, b=k, out = abcdefghijOrk);
+    Or(a=abcdefghijOrk, b=l, out = abcdefghijkOrl);
+    Or(a=abcdefghijkOrl, b=m, out = abcdefghijklOrm);
+    Or(a=abcdefghijklOrm, b=m, out = abcdefghijklmOrn);
+    Or(a=abcdefghijklmOrn, b=o, out = abcdefghijklmnOro);
+    Or(a=abcdefghijklmnOro, b=p, out = out);
 }

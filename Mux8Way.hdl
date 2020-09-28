@@ -16,5 +16,7 @@ CHIP Mux8Way {
     OUT out;
 
     PARTS:
-    // Implementation missing
+    Mux4Way(a=a, b=b, c=c, d=d, sel[0]=sel[0], sel[1]=sel[1], out=abcdMux4Way);
+    Mux4Way(a=e, b=f, c=g, d=h, sel[0]=sel[0], sel[1]=sel[1], out=efghMux4Way);
+    Mux(a=abcdMux4Way, b=efghMux4Way, sel=sel[3], out=out);
 }
