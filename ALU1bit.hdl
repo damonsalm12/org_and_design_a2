@@ -16,5 +16,9 @@ CHIP ALU1bit {
         cout;    // carry-out bit (ignored for NOR)
 
     PARTS:
-    // Implementation missing
+    Or(a=a, b=b, out= aOrb);
+    Not(in=aOrb, out=aNorb);
+    Xor(a=sub, b=b, out=subXorb);
+    FullAdder(a=a, b=subXorb, c=cin, carry=cout, sum=FullAdderout);
+    Mux(a=FullAdderout, b=aNorb, sel=nor, out=out);
 }
